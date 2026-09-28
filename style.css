@@ -57,10 +57,24 @@ body {
 #wrapper #main {
     margin-top: 10px;
     background-color: #BED9FC;
+    height: 60%;
+    padding-top: 5px;
+}
+#wrapper #main ul {
+	list-style: circle;
 }
 
 
+
 #menu #center a:hover{
+    background-color: #3D526B;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-color: #000000;
+    border-left-color: #000000;
+    color: #FFFFFF;
+    -webkit-box-shadow: 2px 5px 5px -2px #31436A;
+    box-shadow: 2px 5px 5px -2px #31436A;
 	
 }
 
@@ -69,4 +83,10 @@ body {
     padding-top: 25px;
     font-style: italic;
     color: #000000;
+}
+#wrapper #main #align {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    float: left;
 }
