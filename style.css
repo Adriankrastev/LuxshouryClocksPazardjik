@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(135deg,rgba(149,198,35,1.00) 0.41%,rgba(19,70,17,1.00) 100%);
 }
 #wrapper {
-    height: 1000px;
+    height: 950px;
     width: 60%;
     background-color: #F7A072;
     margin-left: auto;
@@ -57,8 +57,9 @@ body {
 #wrapper #main {
     margin-top: 10px;
     background-color: #BED9FC;
-    height: 60%;
+    height: 500px;
     padding-top: 5px;
+    padding-left: 10px;
 }
 #wrapper #main ul {
 	list-style: circle;
@@ -89,4 +90,11 @@ body {
     padding-right: 10px;
     padding-top: 10px;
     float: left;
+}
+#wrapper #footer {
+    clear: none;
+    height: 100px;
+    background-color: #AB2346;
+    margin-top: 12px;
+
 }
