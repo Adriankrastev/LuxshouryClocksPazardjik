@@ -54,6 +54,11 @@ body {
     border-radius: 30px;
     transition: 0.3s;
 }
+#wrapper #main {
+    margin-top: 10px;
+    background-color: #BED9FC;
+}
+
 
 #menu #center a:hover{
 	
