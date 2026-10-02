@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(135deg,rgba(149,198,35,1.00) 0.41%,rgba(19,70,17,1.00) 100%);
 }
 #wrapper {
-    height: 950px;
+    height: 1010px;
     width: 60%;
     background-color: #F7A072;
     margin-left: auto;
@@ -93,8 +93,28 @@ body {
 }
 #wrapper #footer {
     clear: none;
-    height: 100px;
+    height: 160px;
     background-color: #AB2346;
     margin-top: 12px;
 
+}
+#wrapper #footer .icon {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+	transition: ease 0.3s;
+}
+
+#wrapper #footer .icon:hover{
+	
+	transform: translateY(-5px);
+}
+
+
+#wrapper #footer #size {
+    font-size: 24px;
+    font-style: oblique;
 }
