@@ -65,7 +65,6 @@ body {
     background-color: #BED9FC;
     height: 1700px;
     padding-top: 5px;
-    padding-left: 10px;
 }
 
 
@@ -80,6 +79,15 @@ body {
     box-shadow: 2px 5px 5px -2px #31436A;
 	
 }
+#main #navigation .button {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#wrapper #main #navigation {
+    background-color: #AB2346;
+    height: 50px;
+}
 
 
 #wrapper #header #align {
@@ -87,13 +95,6 @@ body {
     font-style: italic;
     color: #000000;
     text-align: center;
-}
-#wrapper #main #aliign {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    float: left;
-    border-radius: 40px 20px;
 }
 #wrapper #footer {
     clear: none;
@@ -185,4 +186,5 @@ body {
     border: 1px solid #383838;
     width: 237px;
     background-color: #333333;
+    margin-left: -5px;
 }
