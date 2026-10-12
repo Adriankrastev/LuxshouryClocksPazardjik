@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(135deg,rgba(149,198,35,1.00) 0.41%,rgba(19,70,17,1.00) 100%);
 }
 #wrapper {
-    height: 2130px;
+    height: 1740px;
     width: 60%;
     background-color: #F7A072;
     margin-left: auto;
@@ -34,7 +34,8 @@ body {
     -webkit-box-shadow: 4px 4px 8px -2px #FF0000;
     box-shadow: 4px 4px 8px -2px #FF0000;
 }
-#wrapper #menu {
+#wrapper #menu
+{
     background-color: #AB2346;
     height: 50px;
     color: #FFFFFF;
@@ -43,10 +44,22 @@ body {
     padding-top: 3%;
     margin-top: 34px;
 }
-#menu #center a {
+
+#wrapper #main #navigation{
+    background-color: #AB2346;
+    height: 50px;
+    color: #FFFFFF;
+    font-style: italic;
+    text-align: center;
+    padding-top: 3%;
+    margin-top: 250px;
+}
+
+#menu #center a,
+#navigation .button a {
     text-decoration: none;
     color: #000000;
-    font-size: 20px;
+    font-size: 18.6px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 6px;
@@ -59,16 +72,18 @@ body {
     border-color: #FFFFFF #FFFFFF #646464 #5F5F5F;
     border-radius: 30px;
     transition: 0.3s;
+    font-weight: bold;
 }
 #wrapper #main {
     margin-top: 10px;
     background-color: #BED9FC;
-    height: 1700px;
+    height: 1224px;
     padding-top: 5px;
 }
 
 
 #menu #center a:hover,
+#navigation .button a:hover,
 #menu #center a.active {
     background-color: #3D526B;
     border-width: 2px;
@@ -85,10 +100,6 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
-#wrapper #main #navigation {
-    background-color: #AB2346;
-    height: 50px;
-}
 
 
 #wrapper #header #align {
@@ -100,10 +111,9 @@ body {
 #wrapper #footer {
     clear: none;
     height: 150px;
-    background-color: #AB2346;
+    background-color: rgba(149,198,35,1.00);
     margin-top: 12px;
-    color: #FFFFFF;
-
+    color: #000000;
 }
 #wrapper #footer .icon {
     width: 70px;
@@ -129,6 +139,7 @@ body {
     text-align: center;
     margin-top: 5px;
     font-style: italic;
+    padding-top: 20px;
 }
 #wrapper #main #section1,
 #wrapper #main #section2,
@@ -152,6 +163,7 @@ body {
     float: left;
     margin-top: 17px;
     margin-right: 25px;
+    margin-bottom: 30px;
 }
 
 #section1 .product .text,

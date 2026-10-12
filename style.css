@@ -73,7 +73,9 @@ body {
 
 
 
-#menu #center a:hover{
+#menu #center a:hover,
+#menu #center a.align
+{
     background-color: #3D526B;
     border-width: 2px;
     border-style: solid;
