@@ -55,7 +55,25 @@ body {
     margin-top: 250px;
 }
 
-#menu #center a,
+#menu #center a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 7px;
+    margin-left: 7px;
+    background-color: #BFDBFE;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF #646464 #5F5F5F;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
 #navigation .button a {
     text-decoration: none;
     color: #000000;
