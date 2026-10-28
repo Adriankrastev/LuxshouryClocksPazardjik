@@ -42,20 +42,26 @@
 	  
 	<p id="size">Изработил: Адриан Иванов Кръстев 12а &copy; никой няма право да копира този сайт.</p>
 	  
-    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="70" height="70" alt="ticktock"/></a></div>
+    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="50" height="50" alt="ticktock"/></a></div>
 	  
-  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="70" height="70" alt="insta"/></a></div>
+  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="50" height="50" alt="insta"/></a></div>
 	
-<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="70" height="70" alt="facebook"/></a></div>
-    <div id="time"><p id="datetime"></p>
-<script>
-  // Get current date and time
-  var now = new Date();
-  var datetime = now.toLocaleString();
-  // Insert date and time into HTML
-  document.getElementById("datetime").innerHTML = datetime;
-</script>
-</div>
+<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="50" height="50" alt="facebook"/></a></div>
+    <div id="datetime"></div>
+
+    <script>
+        // Функция за обновяване на датата и часа
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').innerHTML = now.toLocaleString();
+        }
+
+        // Извикване на функцията веднага след зареждане на страницата
+        updateDateTime();
+
+        // Обновяване на датата и часа на всеки 1 секунда
+        setInterval(updateDateTime, 1000);
+    </script>
 
   </footer>
 </div>

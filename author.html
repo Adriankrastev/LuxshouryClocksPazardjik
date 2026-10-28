@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>автор</title>
+<link href="author.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
+</head>
+
+<body>
+<div id="wrapper">
+	<header id="header">
+    <img id="left" src="img/logo.png" width="150" height="150" alt=""/>
+	<h1 id="align">Луксозни Часовници Пазарджик</h1>
+	</header>
+  <nav id="menu"><strong id="center"><a href="index.html">НАЧАЛО</a> 
+	  <a href="aboutUs.html">ЗА НАС</a> <a href="gallery.html">ГАЛЕРИЯ</a> <a href="catalog.html">КАТАЛОГ</a> 
+	  <a href="#">КОНТАКТИ</a> 
+	  <a href="author.html">АВТОР</a> <a href="promotion.html" class="align">ПРОМОЦИЯ</a></strong></nav>
+	
+  <main id="main">
+	<img class="image" src="img/author.jpg" width="259" height="348" alt=""/> 
+	<div id="Para">
+	  <p><strong>Аз съм Адриан Иванов Кръстев, ученик от 12а клас ПГИМ.</strong></p>
+	  <h2>Мойте постижения:</h2>
+	  <div id="scroll">
+		<img class="floatCont" src="img/sertif1.jpg" width="500" height="300" alt=""/> 
+		<img class="floatCont" src="img/sertif2.jpg"  width="500" height="300"  alt=""/> 
+		<img class="floatCont" src="img/chessGoldMedal.jpg"  width="500" height="300"  alt=""/> </div>
+    </div>
+
+    <nav id="navigation">
+      <div class="button"><a href="img/sertif1.jpg">Сертификат Programming basics C#</a></div>
+      <div class="button"><a href="img/sertif2.jpg">Сертификат C# Fundamentals</a></div>
+      <div class="button"><a href="img/chessGoldMedal.jpg">Златен медал по шахмат</a></div>
+    </nav>
+	  
+	
+  </main>
+  <footer id="footer">
+	  
+	<p id="size">Изработил: Адриан Иванов Кръстев 12а &copy; никой няма право да копира този сайт</p>
+	  
+    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="50" height="50" alt="ticktock"/></a></div>
+	  
+  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="50" height="50" alt="insta"/></a></div>
+	
+<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="50" height="50" alt="facebook"/></a></div>
+	  <div id="datetime"></div>
+
+    <script>
+        // Функция за обновяване на датата и часа
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').innerHTML = now.toLocaleString();
+        }
+
+        // Извикване на функцията веднага след зареждане на страницата
+        updateDateTime();
+
+        // Обновяване на датата и часа на всеки 1 секунда
+        setInterval(updateDateTime, 1000);
+    </script>
+  </footer>
+	</div>
+</body>
+</html>
