@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Начало</title>
+<title>За нас</title>
 <link href="aboutUs.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
 </head>
@@ -29,15 +29,21 @@
   <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="70" height="70" alt="insta"/></a></div>
 	
 <div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="70" height="70" alt="facebook"/></a></div>
-    <div id="time"><p id="datetime"></p>
-<script>
-  // Get current date and time
-  var now = new Date();
-  var datetime = now.toLocaleString();
-  // Insert date and time into HTML
-  document.getElementById("datetime").innerHTML = datetime;
-</script>
-</div>
+    <div id="datetime"></div>
+
+    <script>
+        // Функция за обновяване на датата и часа
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').innerHTML = now.toLocaleString();
+        }
+
+        // Извикване на функцията веднага след зареждане на страницата
+        updateDateTime();
+
+        // Обновяване на датата и часа на всеки 1 секунда
+        setInterval(updateDateTime, 1000);
+    </script>
 
   </footer>
 </div>
