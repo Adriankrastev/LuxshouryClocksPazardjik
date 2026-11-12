@@ -5,6 +5,91 @@
 <title>За нас</title>
 <link href="aboutUs.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ["Година", "Продажби (бр.)", { role: "style" } ],
+      ["2022", 110, "#156b12"],          
+      ["2023", 145, "#0f172a"],          
+      ["2024", 185, "#9e1c38"],          
+      ["2025", 230, "#c59b27"]           
+    ]);
+
+    var view = new google.visualization.DataView(data);
+    view.setColumns([0, 1,
+                     { calc: "stringify",
+                       sourceColumn: 1,
+                       type: "string",
+                       role: "annotation" },
+                     2]);
+
+    var options = {
+      title: "Годишни продажби на луксозни часовници",
+      titleTextStyle: {
+        color: '#0f172a', 
+        fontSize: 20,
+        bold: true
+      },
+      width: 600,
+      height: 400,
+      backgroundColor: 'transparent',
+      bar: {groupWidth: "75%"},
+      legend: { position: "none" },
+      hAxis: {
+        textStyle: { color: '#0f172a', bold: true }
+      },
+      vAxis: {
+        textStyle: { color: '#0f172a' },
+        gridlines: { color: '#94a3b8' }
+      }
+    };
+
+    var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+    chart.draw(view, options);
+  }
+</script>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Марка', 'Продажби (%)'],
+      ['Rolex', 38],
+      ['Omega', 25],
+      ['Tag Heuer', 20],
+      ['Patek Philippe', 12],
+      ['Други марки', 5]
+    ]);
+
+    var options = {
+      title: 'Дял на най-продаваните марки часовници',
+      is3D: true,
+      backgroundColor: 'transparent',
+      titleTextStyle: {
+        color: '#0f172a', 
+        fontSize: 20,
+        bold: true
+      },
+      legend: { 
+        position: "right", 
+        textStyle: { color: '#0f172a', fontSize: 15, bold: true } 
+      },
+      colors: ['#0f172a', '#9e1c38', '#c59b27', '#334155', '#94a3b8']
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+    chart.draw(data, options);
+  }
+</script>
+
+
 </head>
 
 <body>
@@ -15,21 +100,26 @@
 	</header>
   <nav id="menu"><strong id="center"><a href="index.html" >НАЧАЛО</a> 
 	  <a class="align" href="aboutUs.html">ЗА НАС</a> <a href="gallery.html">ГАЛЕРИЯ</a> <a href="catalog.html">КАТАЛОГ</a> <a href="#">КОНТАКТИ</a> <a href="author.html">АВТОР</a> <a href="promotion.html">ПРОМОЦИЯ</a></strong></nav>
-  <main id="main">&nbsp;
-	
+  
+    <main id="main">&nbsp;
+	<div id="columnchart_values" style="width: 70%; height: 350px;"></div>
+
+	  <p style="text-align: justify; font-size: 14pt; text-indent: 20pt; padding-right: 10px;">Тази колоночна диаграма визуализира динамиката и устойчивия ръст на годишните продажби на фирмата за периода от 2022 до 2025 година. Всяка колона е обозначена с различен цвят в хармония с луксозната визуална идентичност на сайта и съдържа точен цифров анотационен надпис за максимална отчетливost. Статистиката показва стабилна и възходяща тенденция, като обектът бележи непрекъснато увеличение на реализираните продукти с всяка следваща година. Началната 2022 година стартира с базово ниво от 110 продадени бройки, което служи за солидна основа на бизнеса. Впечатляващата кулминация на периода е отчетена през 2025 година с рекордните 230 продадени часовника, подчертани със златист акцент, което доказва успешното разрастване и утвърждаване на пазара в Пазарджик.</p>
 	  
-	  
+   <div id="piechart_3d" style="width: 70%; height: 350px;"></div>   
+      <p style="text-align: justify; font-size: 14pt; text-indent: 20pt; padding-right: 10px;">Тази триизмерна кръгова диаграма илюстрира пазарния дял и структурата на продажбите на най-предпочитаните луксозни марки часовници в магазина. Визуализацията разпределя общия обем на реализираните продукти в ясни сектори, които лесно се разпознават благодарение на координираната цветова палитра. Водеща позиция на пазара заема марката Rolex с внушителен дял от 38%, следвана от Omega с 25% и Tag Heuer с 20%. По-специфичните и висок клас модели като Patek Philippe заемат 12%, докато останалите брандове формират скромните 5% от общите продажби. Този детайлен анализ доказва ясно кои световни имена привличат най-голям интерес сред клиентите в Пазарджик и помага за по-доброто планиране на бъдещите продуктови наличности.</p>
+
 	</main>
   <footer id="footer">
 	  
 	<p id="size">Изработил: Адриан Иванов Кръстев 12а <br>
      &copy; никой няма право да копира този сайт.</p>
 	  
-    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="70" height="70" alt="ticktock"/></a></div>
+    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="50" height="50" alt="ticktock"/></a></div>
 	  
-  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="70" height="70" alt="insta"/></a></div>
+  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="50" height="50" alt="insta"/></a></div>
 	
-<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="70" height="70" alt="facebook"/></a></div>
+<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="50" height="50" alt="facebook"/></a></div>
     <div id="datetime"></div>
 
     <script>

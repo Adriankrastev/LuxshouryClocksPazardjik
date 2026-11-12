@@ -214,6 +214,7 @@ body {
     border-top-right-radius: 50px 50px;
     margin-left: -2.5px;
     transition: ease 0.3s;
+    object-fit: cover;
 }
 
 #section1 .product .img:hover,
