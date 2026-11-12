@@ -29,6 +29,77 @@
 <img src="img/rolex.jpg" width="275" height="260" alt=""/>
 <img src="img/RolexBlackGold.png" width="275" height="260" alt=""/>
 </main>
+<div id="lightbox" class="lightbox">
+    <button class="nav-btn prev-btn" title="Previous">&#10094;</button>
+    
+    <div class="img-wrapper">
+        <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
+    
+    <button class="nav-btn next-btn" title="Next">&#10095;</button>
+    
+    <span class="close-btn" title="Close">&times;</span>
+</div>
+<script>
+    const images = document.querySelectorAll('#wrapper #main img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    let currentIndex = 0;
+
+    // Open lightbox on image click
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index;
+            updateImage();
+            lightbox.classList.add('active');
+        });
+    });
+
+    // Update image source
+    function updateImage() {
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    // Next / Previous navigation
+    function showNext() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+    }
+
+    function showPrev() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+    }
+
+    nextBtn.addEventListener('click', showNext);
+    prevBtn.addEventListener('click', showPrev);
+
+    // Close lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Close if clicking the dark background outside the image/buttons
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Keyboard support (Escape, Left Arrow, Right Arrow)
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') showNext();
+        if (e.key === 'ArrowLeft') showPrev();
+    });
+</script>
   <footer id="footer">
 	  
 	<p id="size">Изработил: Адриан Иванов Кръстев 12а 
