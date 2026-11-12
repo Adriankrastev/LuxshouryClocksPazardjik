@@ -95,7 +95,7 @@ body {
 #wrapper #main {
     margin-top: 10px;
     background-color: #BED9FC;
-    height: 1224px;
+    height: 1223px;
     padding-top: 5px;
 }
 
@@ -129,16 +129,16 @@ body {
 #wrapper #footer {
     clear: none;
     height: 150px;
-    background-color: rgba(149,198,35,1.00);
+    background-color: #AB2346;
     margin-top: 12px;
-    color: #000000;
+    color: #ffffff;
 }
 #wrapper #footer .icon {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     float: right;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     transition: ease 0.3s;
     margin-top: 16px;
 }
