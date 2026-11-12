@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(135deg,rgba(149,198,35,1.00) 0.41%,rgba(19,70,17,1.00) 100%);
 }
 #wrapper {
-    height: 980px;
+    height: 1100px;
     width: 60%;
     background-color: #F7A072;
     margin-left: auto;
@@ -68,7 +68,7 @@ body {
 #wrapper #main {
     margin-top: 10px;
     background-color: #BED9FC;
-    height: 500px;
+    height: 600px;
     padding-top: 10px;
     padding-left: 10px;
     clear: both;
@@ -103,6 +103,7 @@ body {
     background-color: #AB2346;
     margin-top: 31px;
     color: #FFFFFF;
+    font-size: 20pt;
 
 }
 #wrapper #footer .icon {
@@ -112,7 +113,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     transition: ease 0.3s;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #wrapper #footer .icon:hover{
