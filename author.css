@@ -112,7 +112,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     transition: ease 0.3s;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #wrapper #footer .icon:hover{
@@ -122,7 +122,7 @@ body {
 
 
 #wrapper #footer #size {
-    font-size: 24px;
+    font-size: 20pt;
     font-style: oblique;
 }
 
