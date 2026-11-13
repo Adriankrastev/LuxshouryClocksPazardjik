@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(135deg,rgba(149,198,35,1.00) 0.41%,rgba(19,70,17,1.00) 100%);
 }
 #wrapper {
-    height: 1020px;
+    height: 1200px;
     width: 60%;
     background-color: #F7A072;
     margin-left: auto;
@@ -18,7 +18,7 @@ body {
 }
 #wrapper #header {
     background-color: #BFDBFE;
-    height: 17%;
+    height: 14%;
     padding-top: 2%;
     padding-left: 1%;
     color: #000000;
@@ -36,7 +36,7 @@ body {
 }
 #wrapper #menu {
     background-color: #AB2346;
-    height: 5%;
+    height: 3.6%;
     color: #FFFFFF;
     font-style: italic;
     text-align: center;
@@ -63,7 +63,7 @@ body {
 #wrapper #main {
     margin-top: 10px;
     background-color: #BED9FC;
-    height: 500px;
+    height: 700px;
     padding-top: 5px;
     padding-left: 10px;
 }
@@ -95,8 +95,8 @@ body {
 
 #wrapper #main .discount-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     background-color: #FF0000;
     color: #FFFFFF;
     font-size: 14pt;
@@ -140,6 +140,21 @@ body {
     font-weight: bolder;
     float: right;
     margin-right: 10px;
+}
+
+#wrapper #main #product-video {
+    clear: both;
+    cursor: pointer;
+    margin-top: 60px;
+    border-radius: 30px 20px;
+    transition: 0.3s ease;
+    background-color: #ECF5FF;
+}
+
+#wrapper #main #product-video:hover {
+    -webkit-box-shadow: 6px 5px 8px -5px #000000;
+    box-shadow: 6px 5px 8px -5px #000000;
+    transform: scale(1.06);
 }
 
 #menu #center a:hover,
