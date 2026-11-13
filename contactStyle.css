@@ -264,32 +264,6 @@ body {
     border-color: transparent;
     box-shadow: 2px 5px 3px -2px rgba(70,54,50,1.00);
 }
-
-#wrapper #main #working {
-    margin-top: 30px;
-    background-color: #D36135;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    margin-left: 300px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #FFFFFF #FFFFFF #000000 #000000;
-    border-radius: 30px;
-    font-size: 24px;
-    transition: 0.3s ease;
-}
-
-#wrapper #main #working:hover{
-    background-color: #533B34;
-    color: #FFFFFF;
-    -webkit-box-shadow: 2px 5px 8px -2px #000000;
-    box-shadow: 2px 5px 8px -2px #000000;
-}
 #wrapper #main #result {
     background: rgba(255, 255, 255, 0.18);
     -webkit-backdrop-filter: blur(8px);
@@ -319,4 +293,35 @@ body {
 #wrapper #main #result #result-title {
     
    margin-top: -1px;
+}
+
+#wrapper #main #working a{
+    background: #0073ff; /* for browsers without gradient support */
+  background: linear-gradient(135deg, #0073ff 0%, #7300ff 100%);
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20pt;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dbdada #dbdada #3e3e3e #3e3e3e;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  clear: both;
+  position: relative;
+  left: 37%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+#working a:hover{
+  background: #0073ff; /* for browsers without gradient support */
+  background: linear-gradient(315deg, #0073ff 0%, #7300ff 100%);
+  -webkit-box-shadow: 2px 5px 3px -2px rgba(70,54,50,1.00);
+  box-shadow: 2px 5px 3px -2px rgba(70,54,50,1.00);
+  transform: translateY(-5px);
 }
